@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-bar-items">
+            <ul id="list-items">
+                <li><a href="#">Men's Outerwear</a></li>
+                <li><a href="#">Ladies Outerwear</a></li>
+                <li><a href="#">Men's T-shirts</a></li>
+                <li><a href="#">Ladies T-shirts</a></li>
+            </ul>
+        </div>
+        <!-- Overlay
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div> -->
+        <div class="header">
+            <div class="menu-bar" onclick="showItems()"><a href="#"><img src="images/menu-image.png"></a></div>
+            <p><a href="#">SHOP</a></p>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            </svg>
+        </div>
+        <div class="navbar">
+            <ul class="unlist">
+                <li><a href="#">Men's Outerwear</a></li>
+                <li><a href="#">Ladies Outerwear</a></li>
+                <li><a href="#">Men's T-shirts</a></li>
+                <li><a href="#">Ladies T-shirts</a></li>
+            </ul>
+        </div>
+        <div class="singlepage-section">
+            <img src="images/Mensouterwear/image1.jpg" class="product-image">
+            <div class="product-details">
+                <h3>Men's Tech Shell Full-Zip</h3>
+                <span>$50.20</span>
+                <div class="singlepage-product-size">
+
+                    <label for="size">Size</label>
+                    <select id="size" class="product-options">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <br>
+                <div class="singlepage-product-quantity">
+                    <label for="quantity">Quantity</label>
+                    <select id="quantity" class="product-options">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 </option>
+                    </select>
+                </div>
+
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p>A versatile full-zip that you can wear all day long and even to the gym. This technical shell
+                        features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media
+                        player</p>
+                    <div class="features">
+                        <p>Features:</p>
+                        <ul>
+                            <li>100% polyester.</li>
+                            <li>Smooth, technical front with textured mesh back.</li>
+                            <li>Drawstring bottom for adjustable fit.</li>
+                            <li>Raglan sleeves.</li>
+                            <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="cart-button">ADD TO CART</button>
+            </div>
+        </div>
+        <button type="button" class="cart-button-mobile">ADD TO CART</button>
+        <div class="footer">
+            <button type="button">Made by Polymer</button>
+            <p>DEMO ONLY</p>
+        </div>
+    </div>
+</body>
