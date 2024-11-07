@@ -347,6 +347,10 @@
      max-width: 1200px;
      margin: 20px auto;
  }
+ .singlepage-section a{
+    color:black;
+    text-decoration: none;
+ }
 
  .singlepage-section .product-image  {
      width: 100%;
@@ -436,6 +440,10 @@
     display: flex;
     flex-direction: column;
     margin:auto;
+}
+.cart-section a{
+    color:black;
+    text-decoration: none;
 }
 .cart-section p{
     text-align: center;
@@ -711,9 +719,7 @@
     width:50%;
 }
 
-.first-form label{
 
-}
 .check-box input {
    width:50px;
 }
