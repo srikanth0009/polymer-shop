@@ -565,7 +565,7 @@
     margin:auto;
     margin:20px 0;
     border:none;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
    
 }
 .state{
@@ -587,6 +587,9 @@
     width:50%;
 }
 
+.first-form label{
+    
+}
 .check-box input {
    width:50px;
 }
@@ -671,6 +674,7 @@ input:focus{
     justify-content: space-between;
 }
 .checkout-button-mobile{
+    display:none;
     color:white;
     bottom:0px;
     width:100%;
@@ -678,8 +682,6 @@ input:focus{
     position:fixed;
     height:50px;
 }
-
-
 
 
  /* Media Queries */
@@ -842,6 +844,7 @@ input:focus{
  }
 
  /* ========= Checkout page ============= */
+
  @media screen and (max-width:760px){
     .checkout-form{
         flex-direction: column;
