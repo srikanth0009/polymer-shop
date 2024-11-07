@@ -568,7 +568,7 @@
     margin:auto;
     margin:20px 0;
     border:none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(180, 176, 176);
    
 }
 .state{
@@ -578,12 +578,133 @@
     margin-bottom: 30px;
 }
 .state input{
-    width:50%;
+    width:100%;
     padding:0px;
     margin:0px;
     padding-top:15px;
     padding-bottom: 15px;
     
+    
+}
+.email{
+    position: relative;
+}
+.email label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.email input:focus + #email-label{
+    
+        top:5px;
+    
+}
+.number{
+    position: relative;
+}
+.number label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.number input:focus + #number-label{
+
+        top:5px;
+    
+}
+.inside-address{
+    position: relative;
+}
+.inside-address label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.inside-address input:focus + #inside-address-label{
+        
+        top:5px;
+    
+}
+.city{
+    position: relative;
+}
+.city label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.city input:focus + #city-label{
+        
+        top:5px;
+    
+}
+
+.inside-state{
+    position: relative;
+}
+.inside-state label{
+    position:absolute;
+    left: 0;
+    top: 20px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.inside-state input:focus + #inside-state-label{
+        
+        top:5px;
+    
+}
+.zipcode{
+    position: relative;
+}
+.zipcode label{
+    position:absolute;
+    left: 0;
+    top: 20px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.zipcode input:focus + #zipcode-label{
+        
+        top:5px;
+    
+}
+.holder-name{
+    position: relative;
+}
+.holder-name label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.holder-name input:focus + #holder-name-label{
+        
+        top:5px;
+    
+}
+.holder-number{
+    position: relative;
+}
+.holder-number label{
+    position:absolute;
+    left: 0;
+    top: 35px;
+    /* margin-top:50px; */
+    color:grey;
+}
+.holder-number input:focus + #holder-number-label{
+        
+        top:5px;
     
 }
 .first-form{
