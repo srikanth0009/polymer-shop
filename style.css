@@ -273,7 +273,7 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     margin-top: 0px;
+     margin-top: 20px;
  }
 
  .menswearpage-top p {
@@ -335,15 +335,16 @@
      width: 100%;
  }
 
- /* Single page Section */
+ /* ============ Single page Section ================== */
 
+ }
  .singlepage-section {
 
      display: flex;
      flex-direction: column;
      /* justify-content: center;
      align-items: center; */
-     width: 100%;
+     width: 90%;
      max-width: 1200px;
      margin: 20px auto;
  }
@@ -359,13 +360,12 @@
  }
 
  .singlepage-section select {
-     width: 90%;
+     width: 100%;
      background-color: white;
      border: none;
-     border-top: 1px solid grey;
-     border-bottom: 1px solid grey;
      height: 40px;
      text-align:center;
+     
      
  }
 
@@ -379,22 +379,38 @@
  }
 
  .singlepage-product-size {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 
-     padding-top: 20px;
+     margin-top: 20px;
+     padding-top:20px;
+ }
+ .singlepage-product-quantity{
+
+    border-bottom: 1px solid grey;
+    margin:0px;
  }
 
- .singlepage-section select:active {
-     border-bottom: 2px solid grey;
+ .singlepage-section select:Focus {
+     border-bottom: 2px solid black;
  }
 
  .product-description {
      width: 90%;
-     margin: 20px;
+     
      color: grey;
  }
 
- .product-description h3 {
+.product-details h3  {
      color: black;
+     font-size:20px;
+     font-weight: normal;
+ }
+ .product-details p{
+    font-size:14px;
+ }
+  .features ul li {
+    font-size: 14px;
  }
 
  .singlepage-section label{
@@ -421,7 +437,7 @@
  .cart-button{
     display:none;
     text-decoration: none;
-    border:2px solid grey;
+    border:2px solid black;
     height:40px;
     width:200px;
     text-align:center;
@@ -429,7 +445,7 @@
     padding-top:5px;
     padding-bottom:5px;
     color:black;
-    
+    font-weight: 600;
  }
 
 /* ================= Cart Session ========================= */
@@ -516,6 +532,7 @@
 }
 
 .cart-total{
+    width:90%;
     display:flex;
     justify-content: flex-end;
     gap:50px;
@@ -578,6 +595,9 @@
     border:none;
     border-bottom: 1px solid rgb(180, 176, 176);
    
+}
+input.required:invalid {
+    color: red;
 }
 .state{
     display:flex;
@@ -726,12 +746,7 @@
 .toggleContent {
     display: none;
 }
-/* #toggleCheckbox:checked + .toggleContent {
-    display: block;
- } 
-#toggleCheckbox + input[type=checkbox]:checked ~ .toggleContent{
-    display: block;
-    } */
+
 .extra-address{
     
     display:flex;
@@ -819,7 +834,7 @@ input:focus{
 
  /* ========== Home-page ,  Menswear ============== */
 
- @media screen and (min-width: 600px) {
+ @media screen and (min-width: 750px) {
      .navbar {
          display: block;
      }
@@ -848,7 +863,7 @@ input:focus{
 
 /* ================== Singlepage =============== */
 
- @media screen and (min-width: 650px) {
+ @media screen and (min-width: 750px) {
 
      .singlepage-section {
         display: flex;
@@ -866,6 +881,9 @@ input:focus{
         
     }
 
+    .singlepage-product-size{
+        padding-top:5px;
+    }
      .product-details {
          display: flex;
          flex-direction: column;
@@ -964,8 +982,14 @@ input:focus{
         gap:30px;
         
     }
+    .cart-total{
+           justify-content: center;
+    }
     .cart-total a{
+        margin:0px;
         display:block;
+        width:0px;
+
     }
     /* .cart-checkout-button{
         display:block;
@@ -1007,4 +1031,5 @@ input:focus{
     .payment{
         width:100%;
     }
+   
  }
